@@ -1,0 +1,1968 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [
+        "jYlnA2Z2FhoW",
+        "qRj8vCvXG-1k",
+        "s7deJQCHHwOa",
+        "GtjxkNHWN5Xo",
+        "3yswDberkE7N",
+        "4IM-9eAGkPdi",
+        "nlBbe3qBRH_J",
+        "_F9KCUzCd3ID",
+        "iHFNxm30lzic",
+        "sOgq54Op4MZL",
+        "R5_dYi9f6t1z",
+        "LdtXZ0LW9ugo",
+        "i4Fo-ddSKWwy",
+        "iupO8iI-ZYAe",
+        "lY924yM0jckW",
+        "NvqGEl4JjpiO",
+        "DHzE7CI4lWGw",
+        "WD5wnvQkmh6E",
+        "kApNvgOLn8lp",
+        "kq9QbEttnA4h"
+      ],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MamushiSushi/bioinformatics-rosalind/blob/main/week3-submission\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P1.** </font>Rename this notebook **Bioinformatics_Module03.ipynb </font><br>**"
+      ],
+      "metadata": {
+        "id": "l3h89jAYBUzz"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P2. </font>**```print()```writes to standard output (i.e. prints output to the screen)"
+      ],
+      "metadata": {
+        "id": "jYlnA2Z2FhoW"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P2.1:** Print <font color = magenta>hello world</font>"
+      ],
+      "metadata": {
+        "id": "r118fqQodA9x"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"hello world\")"
+      ],
+      "metadata": {
+        "id": "kvxK8D5uFx_x"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P3. </font>**```=``` is the ASSIGNMENT operator (assigns values to variables)\n",
+        "####**TASK P3.1:** Ask Gemini, \"*Give me 3 examples to help practice understanding the assignment operator.*\""
+      ],
+      "metadata": {
+        "id": "qRj8vCvXG-1k"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=5\n",
+        "x"
+      ],
+      "metadata": {
+        "id": "VB8HPNe7JpuJ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9b7a247b-c6c9-420d-ea5c-c16fec24fc33"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "5"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P4. </font>** Data types: use ```type()``` to find a variable's \"type\"\n",
+        "####**TASK P4.1:** Ask Gemini, \"*Give me examples of each data type to see how they look as outputs.*\""
+      ],
+      "metadata": {
+        "id": "s7deJQCHHwOa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "type(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ktR75uWIJ0uc",
+        "outputId": "0b8c5a20-3c13-4ac9-ff14-4874ed9bf81b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "int"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P5. </font>** Arithmetic and comparison operators\n",
+        "####**TASK P5.1:**   Complete Rosalind #1"
+      ],
+      "metadata": {
+        "id": "GtjxkNHWN5Xo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y=2+3\n",
+        "print(y)\n",
+        "x==y"
+      ],
+      "metadata": {
+        "id": "45s9c4vyQm2U",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9992b730-7641-4bcb-8dc3-850e8b749115"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P6. </font>** ```input()``` gets input from the user"
+      ],
+      "metadata": {
+        "id": "3yswDberkE7N"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "TASK P6.1"
+      ],
+      "metadata": {
+        "id": "z97rSY9gqdad"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "d91046dd",
+        "outputId": "5ffec53c-b02d-4fbc-b398-988fa4e7ce4d"
+      },
+      "source": [
+        "name = input(\"Enter your name: \")\n",
+        "print(\"Hello, \" + name)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your name: Reed McClure\n",
+            "Hello, Reed McClure\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "iuV5oXewkjSy"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P6.1:** Solve Rosalind #1 again, but get user input for the values of a and b rather than modifying the code."
+      ],
+      "metadata": {
+        "id": "e3LaAQeLRmE6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= int(input(\"enter th first side length (a)\"))\n",
+        "b= int(input(\"enter the second side length (b):\"))\n",
+        "c=a**2+b**2\n",
+        "print (\"The sq of the hypotenuse is\",c)"
+      ],
+      "metadata": {
+        "id": "wZ0XL0L6Rq2H",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "5586d672-cd59-4038-cc76-ed908421e66d"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter th first side length (a)971\n",
+            "enter the second side length (b):892\n",
+            "The sq of the hypotenuse is 1738505\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P7. </font>** ```list``` type variables (create, replace, append)"
+      ],
+      "metadata": {
+        "id": "4IM-9eAGkPdi"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P7.1**"
+      ],
+      "metadata": {
+        "id": "DhNGdYK6NEpe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Create a list with 3 elements and then print them\n",
+        "\n",
+        "my_list = [\"Hello\", \"World\", \"Charles Darwin\"]\n",
+        "print (my_list[1])"
+      ],
+      "metadata": {
+        "id": "N3VRRQIEkXuP",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "2fbf3da8-77eb-4e33-de2e-9639605441c3"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "World\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P7.2**"
+      ],
+      "metadata": {
+        "id": "Yn3bAoi8NKy5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Substitute the item at index 2 in the list\n",
+        "my_list[2] = \"Alfred R. Wallace\"\n",
+        "print (my_list)"
+      ],
+      "metadata": {
+        "id": "WNnsUuduOKbI",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "a53dc00b-22f2-43aa-9e76-479a1f2da722"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Hello', 'World', 'Alfred R. Wallace']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P7.3**"
+      ],
+      "metadata": {
+        "id": "SxiMMNLyPwGV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Append an item to the end of the list\n",
+        "my_list.append(\"Charles Darwin\")\n",
+        "print (my_list)"
+      ],
+      "metadata": {
+        "id": "3VrLc6CGQTi-",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "f1db4fdd-18a4-476e-f427-16fe75f70f13"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Hello', 'World', 'Alfred R. Wallace', 'Charles Darwin']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P7.4**. Ask Gemini how to <font color=crimson>```insert```</font> a new item at index 1 in the list"
+      ],
+      "metadata": {
+        "id": "XQKmwgbfQond"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# On line #2 insert an item at index 1 of my_list\n",
+        "my_list.insert(1,\"Reed\")\n",
+        "print (my_list)"
+      ],
+      "metadata": {
+        "id": "u0maP5CZZN13",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "82ee33a2-ebdb-4f01-8397-8e41b5ad6110"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Hello', 'Reed', 'World', 'Alfred R. Wallace', 'Charles Darwin']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P8. </font>** Slicing lists and strings"
+      ],
+      "metadata": {
+        "id": "nlBbe3qBRH_J"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P8.1** Slice and print only the middle two elements from the list created in P7 (i.e. only <font color=magenta>World</font> and <font color=magenta>Alfred R. Wallace</font>).  "
+      ],
+      "metadata": {
+        "id": "M0YW2MP0WtuI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print (my_list[2:4])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "Tp1djNtiaxSb",
+        "outputId": "03308e4e-0ac5-4bc3-bcf0-766bf89bf65b"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['World', 'Alfred R. Wallace']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P8.2**: Print <font color=magenta>Wallace World</font> from **my_string** by slicing\n"
+      ],
+      "metadata": {
+        "id": "_F9KCUzCd3ID"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_string = \"HelloWorldCharlesDarwinAlfred R. Walace\"\n",
+        "print (my_string[0:5],my_string[5:10])\n",
+        "\n",
+        "# in the print command below input the correct index values to complete Task P8.2\n",
+        "print (my_string[33 : ],my_string[5 :10 ])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "AafKngtba8En",
+        "outputId": "bbd622b0-479d-4651-f780-6ffba7cac82a"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World\n",
+            "Walace World\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P8.3**  **<font color = orange> Complete Rosalind Problem #2 Strings and Lists</font>**"
+      ],
+      "metadata": {
+        "id": "2TTQVE-Xf8jR"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s = \"75rzwCTuPj4HMbs7TADBdorQ8XhtWHpL8zxigeQyhxxArYM5kYUcAlPzSp1DTv0OYqkMGtoa2YFQEQQdl3McTCUNnPICeBrachyramphusDNwUSEa3HCsxH2rrbrachydactylapV7z1DEgqeM4v4rsAKLgktmIhY13q1lzdAZ37kQwmU3CNRL37xgti.\"\n",
+        "a = 93\n",
+        "b = 105\n",
+        "c = 122\n",
+        "d = 134\n",
+        "\n",
+        "# Extract the substrings\n",
+        "substring1 = s[a:b+1]\n",
+        "substring2 = s[c:d+1]\n",
+        "\n",
+        "# Print the substrings separated by a space\n",
+        "print(substring1, substring2)"
+      ],
+      "metadata": {
+        "id": "LI88f5RZh4GL",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "0667a32e-f022-4fda-daea-98f8e5709576"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Brachyramphus brachydactyla\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**<font color=crimson>TASK 8.4 Commit to GitHub**</font>*italicized text*"
+      ],
+      "metadata": {
+        "id": "Tw6Pwh6TjwJ9"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P9. </font>** ```if``` and ```else``` - conditional output"
+      ],
+      "metadata": {
+        "id": "iHFNxm30lzic"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P9.1** Create some code that subtracts two numbers if they are different or adds them if they are the same."
+      ],
+      "metadata": {
+        "id": "WCXnGdftztbN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=7\n",
+        "b=13\n",
+        "if a!=b:\n",
+        "  print(a-b)\n",
+        "\n",
+        "else:\n",
+        "  print(a+b)"
+      ],
+      "metadata": {
+        "id": "KabZsL5Fy8jJ",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "89161c21-fec5-4327-ae3b-22d4030b4bb7"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "-6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P10.</font>** ```while``` loops"
+      ],
+      "metadata": {
+        "id": "sOgq54Op4MZL"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P10.1** Create a while loop that runs 3 times\n"
+      ],
+      "metadata": {
+        "id": "JMqGqhTn4l9s"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#initiate a counter\n",
+        "a = 1\n",
+        "\n",
+        "#print \"Counting!\" while a<=3\n",
+        "while a <= 3:\n",
+        "\n",
+        "    print (\"Counting!\" * a)\n",
+        "    a += 1"
+      ],
+      "metadata": {
+        "id": "07YbiCGO4O1w",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "2cfebe82-d1e4-4def-a282-eb9da055baf6"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Counting!\n",
+            "Counting!Counting!\n",
+            "Counting!Counting!Counting!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P11.</font>** ```for``` loops – looping over lists"
+      ],
+      "metadata": {
+        "id": "R5_dYi9f6t1z"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P11.1** Create a for loop to print each item in a list\n"
+      ],
+      "metadata": {
+        "id": "x9F7v_V073wO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "names = [\"Alice\",\"Bob\",\"Charley\"]\n",
+        "\n",
+        "for name in names:\n",
+        "    print (\"Hello\", name)"
+      ],
+      "metadata": {
+        "id": "-aqaQ5hz70yo",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "d20f2eaf-6087-4560-c76e-ddd4587a652f"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello Alice\n",
+            "Hello Bob\n",
+            "Hello Charley\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P12.</font>** ```for``` loops over a ```range()```of numbers"
+      ],
+      "metadata": {
+        "id": "LdtXZ0LW9ugo"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK 12.1** Using for and range(), create code that prints the numbers 0-9"
+      ],
+      "metadata": {
+        "id": "jG6jvXEBDi4H"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Create a variable to define the  number of iterations\n",
+        "iterations = 10\n",
+        "\n",
+        "#Print the current item's value each time through the loop\n",
+        "for number in range(iterations):\n",
+        "    print (number)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RFBXqQNu_E6X",
+        "outputId": "17ea3665-5605-49cb-8207-56ae8b5b34ee"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK 12.2** Modify the code so that it only prints every 3rd number from 9 through 27 (i.e. including 27)"
+      ],
+      "metadata": {
+        "id": "NRd5srR_G-PQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# print every 3rd number from 9 through 27 (inclusive)\n",
+        "for number in range(9, 28, 3):\n",
+        "    print(number)"
+      ],
+      "metadata": {
+        "id": "irYTFPO-IRHo",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "396b039b-ab93-4ea1-882b-bb3671450727"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n",
+            "12\n",
+            "15\n",
+            "18\n",
+            "21\n",
+            "24\n",
+            "27\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK 12.3** <font color = orange> **Complete Rosalind Problem #3 Conditions and Loops** </font>"
+      ],
+      "metadata": {
+        "id": "83jDEjpMHXUa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Enter code for Rosalind 3 here:\n",
+        "# Given: Two positive integers a and b (a<b<10000).\n",
+        "# Return: The sum of all odd integers from a through b, inclusively.\n",
+        "\n",
+        "a = 4417\n",
+        "b = 8848\n",
+        "\n",
+        "# Ensure the starting number is odd\n",
+        "if a % 2 == 0:\n",
+        "    start = a + 1\n",
+        "else:\n",
+        "    start = a\n",
+        "\n",
+        "total_sum = 0\n",
+        "# Iterate through the odd numbers from start to b (inclusive) and sum them\n",
+        "for number in range(start, b + 1, 2):\n",
+        "    total_sum += number\n",
+        "\n",
+        "print(total_sum)"
+      ],
+      "metadata": {
+        "id": "EI7hRtakG90R",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "7852d769-fead-4e86-e63a-27877ff8076e"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "14696512\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**<font color=crimson>TASK 12.4 Commit to GitHub**</font>"
+      ],
+      "metadata": {
+        "id": "3P9DKNbPI1wp"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **<font color=blue>P13.</font>** File I/O – with open(\"filename\", \"mode\") as filehandle:\n"
+      ],
+      "metadata": {
+        "id": "i4Fo-ddSKWwy"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P13.1** Use the ```read()``` function to print the <font color = orange>practice dataset from Rosalind #4</font>\n"
+      ],
+      "metadata": {
+        "id": "sgc3wiQmLXcI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open(\"practice.txt\",\"r\") as data:\n",
+        "\n",
+        "    print(data.read())\n",
+        "\n",
+        "    #print(data.readline())\n",
+        "\n",
+        "    #print(data.readlines())"
+      ],
+      "metadata": {
+        "id": "V5nzHsnULA_n",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "28274ab1-f4e7-41d2-b65a-f8a7ca13adbe"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bravely bold Sir Robin rode forth from Camelot\n",
+            "Yes, brave Sir Robin turned about\n",
+            "He was not afraid to die, O brave Sir Robin\n",
+            "And gallantly he chickened out\n",
+            "He was not at all afraid to be killed in nasty ways\n",
+            "Bravely talking to his feet\n",
+            "Brave, brave, brave, brave Sir Robin\n",
+            "He beat a very brave retreat\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P13.2** Explore file object functions to read and print practice.txt"
+      ],
+      "metadata": {
+        "id": "GLO6tBYNVzYZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#<font color=blue>**P14.**</font> Store the content, close the file, and join ( ) the list"
+      ],
+      "metadata": {
+        "id": "iupO8iI-ZYAe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open(\"practice.txt\",\"r\") as data:\n",
+        "\n",
+        "  list_of_lines=data.readlines()\n",
+        "\n",
+        "print (list_of_lines)"
+      ],
+      "metadata": {
+        "id": "8U5w2qOudDyp",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "70185ab0-b2ab-4d41-ad73-00d7f61d9d50"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Bravely bold Sir Robin rode forth from Camelot\\n', 'Yes, brave Sir Robin turned about\\n', 'He was not afraid to die, O brave Sir Robin\\n', 'And gallantly he chickened out\\n', 'He was not at all afraid to be killed in nasty ways\\n', 'Bravely talking to his feet\\n', 'Brave, brave, brave, brave Sir Robin\\n', 'He beat a very brave retreat']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P14.1** Read practice.txt into a list of lines. Then, after the file is closed, use the join ( ) function to print the contents so it looks like the original input."
+      ],
+      "metadata": {
+        "id": "5pPhGmQYiiKx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print (\"_\".join(list_of_lines))"
+      ],
+      "metadata": {
+        "id": "XLvFZ9uSeyYH",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "894f952f-5e0f-478a-8100-fce52646dd9e"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bravely bold Sir Robin rode forth from Camelot\n",
+            "_Yes, brave Sir Robin turned about\n",
+            "_He was not afraid to die, O brave Sir Robin\n",
+            "_And gallantly he chickened out\n",
+            "_He was not at all afraid to be killed in nasty ways\n",
+            "_Bravely talking to his feet\n",
+            "_Brave, brave, brave, brave Sir Robin\n",
+            "_He beat a very brave retreat\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#<font color=blue>**P15.**</font> Combining for loops with file objects"
+      ],
+      "metadata": {
+        "id": "lY924yM0jckW"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P15.1** Use a for loop to print each line in practice.txt"
+      ],
+      "metadata": {
+        "id": "NvqGEl4JjpiO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open(\"practice.txt\",\"r\") as data:\n",
+        "\n",
+        "  for line in data:\n",
+        "    print (line)"
+      ],
+      "metadata": {
+        "id": "snY-10pUkMby",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "f622a26a-fd58-47b6-f743-51c9328e64e5"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bravely bold Sir Robin rode forth from Camelot\n",
+            "\n",
+            "Yes, brave Sir Robin turned about\n",
+            "\n",
+            "He was not afraid to die, O brave Sir Robin\n",
+            "\n",
+            "And gallantly he chickened out\n",
+            "\n",
+            "He was not at all afraid to be killed in nasty ways\n",
+            "\n",
+            "Bravely talking to his feet\n",
+            "\n",
+            "Brave, brave, brave, brave Sir Robin\n",
+            "\n",
+            "He beat a very brave retreat\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P15.2** <font color=orange>**Complete Rosalind Problem #4 Working with Files**</font>\n"
+      ],
+      "metadata": {
+        "id": "DHzE7CI4lWGw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open(\"rosalind_ini5.txt\", \"r\") as data:\n",
+        "  lines = data.readlines()\n",
+        "# select even-numbered lines (2, 4, 6, ...) - remember python lists are 0-indexed\n",
+        "even_lines = lines[1::2] # start at index 1, take every second line\n",
+        "print(''.join(even_lines))"
+      ],
+      "metadata": {
+        "id": "8QR9dRFtltBN",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "outputId": "7e80851e-0c33-4f73-9230-fd44360564d1"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Some things in life are bad, they can really make you mad\n",
+            "Other things just make you swear and curse\n",
+            "When you're chewing on life's gristle, don't grumble give a whistle\n",
+            "This will help things turn out for the best\n",
+            "Always look on the bright side of life\n",
+            "Always look on the right side of life\n",
+            "If life seems jolly rotten, there's something you've forgotten\n",
+            "And that's to laugh and smile and dance and sing\n",
+            "When you're feeling in the dumps, don't be silly, chumps\n",
+            "Just purse your lips and whistle, that's the thing\n",
+            "So, always look on the bright side of death\n",
+            "Just before you draw your terminal breath\n",
+            "Life's a counterfeit and when you look at it\n",
+            "Life's a laugh and death's the joke, it's true\n",
+            "You see, it's all a show, keep them laughing as you go\n",
+            "Just remember the last laugh is on you\n",
+            "Always look on the bright side of life\n",
+            "And always look on the right side of life\n",
+            "Always look on the bright side of life\n",
+            "And always look on the right side of life\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**<font color=crimson>TASK 15.4 Commit to GitHub**</font>"
+      ],
+      "metadata": {
+        "id": "GJ_acW4WlwDn"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#<font color=blue>**P16.**</font> ```for word in line.split()``` – looping over strings and splitting by any delimiter"
+      ],
+      "metadata": {
+        "id": "WD5wnvQkmh6E"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P16.1** Print each word in the ROSALIND Problem #5 Sample Dataset on a separate line.\n"
+      ],
+      "metadata": {
+        "id": "kApNvgOLn8lp"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "with open(\"practice_5.txt\",\"r\") as data:\n",
+        "\n",
+        "  line=data.read()\n",
+        "\n",
+        "for word in line.split():\n",
+        "    print (word)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "PBjyhwclpKoM",
+        "outputId": "87ccc38c-4761-445b-9559-526b056dc9ff"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "We\n",
+            "tried\n",
+            "list\n",
+            "and\n",
+            "we\n",
+            "tried\n",
+            "dicts\n",
+            "also\n",
+            "we\n",
+            "tried\n",
+            "Zen\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#<font color=blue>**P17.**</font> Python Dictionaries { }"
+      ],
+      "metadata": {
+        "id": "kq9QbEttnA4h"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK 17.1** Create and print your first dictionary"
+      ],
+      "metadata": {
+        "id": "lVudFQkZqJgh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sequences = {\n",
+        "    \"H.neandertalensis\":\"ACGTCGCTCTGCTA\",\n",
+        "    \"H.sapiens\":\"ACGTCACTCTGCTA\"\n",
+        "    }\n",
+        "\n",
+        "print (sequences)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "IzKFWDlgq6zo",
+        "outputId": "8cd269c3-3c86-4231-e66a-895d967671fc"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'H.neandertalensis': 'ACGTCGCTCTGCTA', 'H.sapiens': 'ACGTCACTCTGCTA'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#<font color=blue>**P18.**</font> Manipulating and printing dictionaries"
+      ],
+      "metadata": {
+        "id": "OvqoT6UwnK0g"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK 18.1** Modify line 8 to create a fasta file of the hominid sequences"
+      ],
+      "metadata": {
+        "id": "5Be2tcQRrjso"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sequences[\"P.troglodytes\"]=\"ACGTCACTCTCCTA\"\n",
+        "\n",
+        "sequences.update({\"G.gorilla\":\"ACGTCCTCCTA\", \"H.erectus\":\"ACGTCACTCTGCTA\"})\n",
+        "\n",
+        "print (sequences[\"H.sapiens\"])\n",
+        "\n",
+        "for key,value in sequences.items():\n",
+        "     print (key,value)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "b-2XDof4rtP8",
+        "outputId": "c9d9554a-7bf7-4974-881d-c02be63e0f4a"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ACGTCACTCTGCTA\n",
+            "H.neandertalensis ACGTCGCTCTGCTA\n",
+            "H.sapiens ACGTCACTCTGCTA\n",
+            "P.troglodytes ACGTCACTCTCCTA\n",
+            "G.gorilla ACGTCCTCCTA\n",
+            "H.erectus ACGTCACTCTGCTA\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P18.2** <font color= orange>**Complete Rosalind Problem #5  Dictionaries**</font>"
+      ],
+      "metadata": {
+        "id": "Y98OZYUNvmWD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Complete Rosalind Problem #5 Dictionaries (using rosalind_ini6.txt)\n",
+        "\n",
+        "# Read the content from the file\n",
+        "with open(\"rosalind_ini6.txt\", \"r\") as file:\n",
+        "    s = file.read()\n",
+        "\n",
+        "# Split the string into words\n",
+        "words = s.split()\n",
+        "\n",
+        "# Create an empty dictionary to store word counts\n",
+        "word_counts = {}\n",
+        "\n",
+        "# Iterate through the words and count occurrences\n",
+        "for word in words:\n",
+        "    if word in word_counts:\n",
+        "        word_counts[word] += 1\n",
+        "    else:\n",
+        "        word_counts[word] = 1\n",
+        "\n",
+        "# Print the word counts\n",
+        "for word, count in word_counts.items():\n",
+        "    print(word, count)"
+      ],
+      "metadata": {
+        "id": "lD3KoTY9wWa7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "da5f9f0b-0c9a-4b03-e834-8a2995bbd922"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "When 1\n",
+            "I 2\n",
+            "find 1\n",
+            "myself 1\n",
+            "in 4\n",
+            "times 1\n",
+            "of 11\n",
+            "trouble 1\n",
+            "Mother 2\n",
+            "Mary 2\n",
+            "comes 2\n",
+            "to 3\n",
+            "me 4\n",
+            "Speaking 3\n",
+            "words 7\n",
+            "wisdom 7\n",
+            "let 30\n",
+            "it 36\n",
+            "be 41\n",
+            "And 3\n",
+            "my 1\n",
+            "hour 1\n",
+            "darkness 1\n",
+            "she 1\n",
+            "is 4\n",
+            "standing 1\n",
+            "right 1\n",
+            "front 1\n",
+            "Let 6\n",
+            "Whisper 4\n",
+            "when 2\n",
+            "the 4\n",
+            "broken 1\n",
+            "hearted 1\n",
+            "people 1\n",
+            "living 1\n",
+            "world 1\n",
+            "agree 1\n",
+            "There 4\n",
+            "will 5\n",
+            "an 4\n",
+            "answer 4\n",
+            "For 1\n",
+            "though 1\n",
+            "they 2\n",
+            "may 1\n",
+            "parted 1\n",
+            "there 2\n",
+            "still 2\n",
+            "a 2\n",
+            "chance 1\n",
+            "that 2\n",
+            "see 1\n",
+            "night 1\n",
+            "cloudy 1\n",
+            "light 1\n",
+            "shines 1\n",
+            "on 1\n",
+            "Shine 1\n",
+            "until 1\n",
+            "tomorrow 1\n",
+            "wake 1\n",
+            "up 1\n",
+            "sound 1\n",
+            "music 1\n",
+            "yeah 2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**<font color=crimson>TASK 18.3 Commit to GitHub**</font>"
+      ],
+      "metadata": {
+        "id": "1dJdfy4bwVO4"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#<font color=blue>**P19.**</font> ```count()``` – counting things made easy"
+      ],
+      "metadata": {
+        "id": "28ygQlYJnZoA"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P19.1** <font color= orange>**Complete Rosalind Problem #6  Counting DNA Nucleotides**</font>"
+      ],
+      "metadata": {
+        "id": "CZ9tBWDmw4D-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Complete Rosalind Problem #6 Counting DNA Nucleotides\n",
+        "\n",
+        "# Read the DNA sequence from the file\n",
+        "with open(\"rosalind_dna.txt\", \"r\") as file:\n",
+        "    dna_sequence = file.read().strip() # Read the content and remove leading/trailing whitespace\n",
+        "\n",
+        "# Count the occurrences of each nucleotide\n",
+        "count_A = dna_sequence.count('A')\n",
+        "count_C = dna_sequence.count('C')\n",
+        "count_G = dna_sequence.count('G')\n",
+        "count_T = dna_sequence.count('T')\n",
+        "\n",
+        "# Print the counts in the required order (A C G T)\n",
+        "print(count_A, count_C, count_G, count_T)"
+      ],
+      "metadata": {
+        "id": "GlwS14zGxBIC",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "66bbbae2-4813-4ea7-d55d-4b3a290987a9"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "206 203 218 203\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK P19.2** Modify your code for the Rosalind #5 Dictionary problem so that it uses count( ) to count the words."
+      ],
+      "metadata": {
+        "id": "rj-OWB6Jym5y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Modify code for Rosalind #5 Dictionary problem to use count()\n",
+        "\n",
+        "# Read the content from the file\n",
+        "with open(\"rosalind_ini6.txt\", \"r\") as file:\n",
+        "    s = file.read()\n",
+        "\n",
+        "# Split the string into words\n",
+        "words = s.split()\n",
+        "\n",
+        "# Create an empty dictionary to store word counts\n",
+        "word_counts = {}\n",
+        "\n",
+        "# Iterate through the unique words and count occurrences using count()\n",
+        "for word in set(words): # Use set to get unique words\n",
+        "    word_counts[word] = words.count(word)\n",
+        "\n",
+        "# Print the word counts\n",
+        "for word, count in word_counts.items():\n",
+        "    print(word, count)"
+      ],
+      "metadata": {
+        "id": "9H_S6jLnzfxR",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "31b5338e-4251-44ae-8c28-352b5ffd7f31"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "may 1\n",
+            "see 1\n",
+            "myself 1\n",
+            "that 2\n",
+            "they 2\n",
+            "darkness 1\n",
+            "on 1\n",
+            "she 1\n",
+            "me 4\n",
+            "though 1\n",
+            "Shine 1\n",
+            "the 4\n",
+            "trouble 1\n",
+            "Let 6\n",
+            "still 2\n",
+            "music 1\n",
+            "sound 1\n",
+            "my 1\n",
+            "there 2\n",
+            "shines 1\n",
+            "will 5\n",
+            "right 1\n",
+            "comes 2\n",
+            "There 4\n",
+            "be 41\n",
+            "agree 1\n",
+            "to 3\n",
+            "people 1\n",
+            "wake 1\n",
+            "times 1\n",
+            "of 11\n",
+            "living 1\n",
+            "light 1\n",
+            "until 1\n",
+            "tomorrow 1\n",
+            "yeah 2\n",
+            "hour 1\n",
+            "in 4\n",
+            "I 2\n",
+            "a 2\n",
+            "Mother 2\n",
+            "broken 1\n",
+            "Whisper 4\n",
+            "Mary 2\n",
+            "an 4\n",
+            "let 30\n",
+            "hearted 1\n",
+            "parted 1\n",
+            "find 1\n",
+            "Speaking 3\n",
+            "front 1\n",
+            "answer 4\n",
+            "For 1\n",
+            "up 1\n",
+            "words 7\n",
+            "standing 1\n",
+            "wisdom 7\n",
+            "when 2\n",
+            "chance 1\n",
+            "night 1\n",
+            "When 1\n",
+            "it 36\n",
+            "cloudy 1\n",
+            "is 4\n",
+            "world 1\n",
+            "And 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**<font color=crimson>TASK 19.3 Commit to GitHub**</font>\n"
+      ],
+      "metadata": {
+        "id": "RzMon_wAzg7D"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#<font color=blue>**P20.**</font> Installing biopython"
+      ],
+      "metadata": {
+        "id": "-IB0c2gG0Z1O"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install biopython"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pinPQdEn0mJM",
+        "outputId": "4e01ba55-0c4b-4a6c-e933-706a2c61ae05"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Collecting biopython\n",
+            "  Downloading biopython-1.85-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (13 kB)\n",
+            "Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from biopython) (2.0.2)\n",
+            "Downloading biopython-1.85-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m3.3/3.3 MB\u001b[0m \u001b[31m20.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hInstalling collected packages: biopython\n",
+            "Successfully installed biopython-1.85\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5ccd6f0b",
+        "outputId": "c165e181-b701-44ec-c31b-3bc7a6ff363f"
+      },
+      "source": [
+        "try:\n",
+        "  from Bio.Seq import Seq\n",
+        "  print(\"Biopython is installed correctly.\")\n",
+        "except ImportError:\n",
+        "  print(\"Biopython is not installed or there was an import error.\")"
+      ],
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Biopython is installed correctly.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#<font color=blue>**P21.**</font> Seq( ) – a function to define sequence objects"
+      ],
+      "metadata": {
+        "id": "IGX-ThdQ3RuA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from Bio.Seq import Seq\n",
+        "\n",
+        "my_sequence = Seq(\"GATGGAACTTGACTACGTAAATT\")"
+      ],
+      "metadata": {
+        "id": "ltZBr8mE4OhM"
+      },
+      "execution_count": 21,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK BP21.2** <font color=orange> **Complete Rosalind #7 Transcribing DNA into RNA**</font>"
+      ],
+      "metadata": {
+        "id": "UXCuEFxg6Jxx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# TASK BP21.2 Complete Rosalind #7 Transcribing DNA into RNA\n",
+        "\n",
+        "# Read the DNA string from the file\n",
+        "with open(\"rosalind_rna.txt\", \"r\") as file:\n",
+        "    dna_string = file.read().strip()\n",
+        "\n",
+        "# Transcribe DNA to RNA by replacing 'T' with 'U'\n",
+        "rna_string = dna_string.replace('T', 'U')\n",
+        "\n",
+        "# Print the transcribed RNA string\n",
+        "print(rna_string)"
+      ],
+      "metadata": {
+        "id": "UXt6gWLM6qde",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4342e294-8265-4a66-ea90-72df2114d6c6"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "GUCUCACACACGCGGGUAACCCAAUCCGAUGCACCAGGGCACAUAUCUUUCAUUGACUGCGGGAUUGUGACACAGUGUGCUCCGUUCUGUGAGUUCACUCCAGACCCUAAAAAUGAACUGGGAAGUCCCCAUGCGGGAAUUUGGUAACUAAAUAUAGCUCCAAGGGAGUGGCGGCAUUAUCCAUUGAUCAGCUACAUAAUCUCCGUCCAUGUCAGAUCCUUGAUGUUCAAACAGCCUGAGGGUUUGGUUCUCUCAUACGAUCGCGCCCUUGGGGUUACGACCGACUGAAAAUCGAAGCGGAAUAUCAGCCUCUACAGGUCAGCGUUUAUAAUUGGCCUGCUCUGCCUGUACGGAAAGGCGGUCAAUAGGUUUACCGUGAGUUAGUAACUCCCGCACAGCGCACAGCUAUAACGAGUUAAGGGCAUGGCCUGGCGGAAUUCAGACAACUACCUGCUUUGCCUGAGCUUAUAGUAUGCCAAAACUCCGCUAAAACUCACUACUCGAAGAUAGCCGGAACGAAGCUCGAAACUUGACAGGUAGCUAACAACAUCUCGAUAGGGCGGGACUAAGACUUCACUAGGAUGAGUACAUGACUAAAUUGGGCGACACUUCAGACGUCCUUCGAUGCAUGCAUUUCAGGGCAACAAACACCUCGAGGUGGAGAAUUCCGACUCAGAUGGCCGGGACGGGGCUAUCGGGCCUAACUGUCUGUCAUGGCCCACCAGUUCGCGAUCCUUGAGGCCUACGGUACAUCAAGGCCGGCAUAUCGUUCACCCCGGGAUCCAGUAUCGUGCCAAACAGCAGUGCAAACACGCUCAAACGAUACGUAGGCGUACUCCUUCACAUGGCCGGGUAUCCAGAGAAUAGCUUGCCGUUUUAGGGAUGCUCUUUGGGUAGAAUCUACUGAGACUCUGCUUCAUACCUGCAAUGAAGUGUACAAGAUCUAAACGAAUUGGAAUAAAAAUGAUUUUGUAUCUGCUGACUGAGCUAG\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK BP21.2** <font color=orange> **Complete Rosalind #8  Translating RNA into Protein**</font>"
+      ],
+      "metadata": {
+        "id": "9P4_MaXp6O3n"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# rna_to_protein.py\n",
+        "# Requires: Biopython\n",
+        "from Bio.Seq import Seq\n",
+        "# import sys # No longer needed as we are not using sys.argv\n",
+        "\n",
+        "def main(path=\"rosalind_prot.txt\"):\n",
+        "    # Read the RNA string, stripping whitespace/newlines\n",
+        "    with open(path, \"r\") as f:\n",
+        "        rna = \"\".join(f.read().split())\n",
+        "\n",
+        "    # Ensure RNA alphabet (just in case the file has 'T')\n",
+        "    rna = rna.replace(\"T\", \"U\")\n",
+        "\n",
+        "    # Translate using the standard codon table, stop at first stop codon\n",
+        "    protein = Seq(rna).translate(table=1, to_stop=True)\n",
+        "    print(str(protein))\n",
+        "\n",
+        "if __name__ == \"__main__\":\n",
+        "    # Optional: pass a different path as the first argument\n",
+        "    # main(sys.argv[1] if len(sys.argv) > 1 else \"rosalind_prot.txt\")\n",
+        "    main() # Call main with the default path"
+      ],
+      "metadata": {
+        "id": "5Rzzfzij6q2P",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "240228ec-1307-42be-fcd6-891df71cefcd"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "MSRERTTHDGDALDLYTERTGQMTESREPPAHTMLVDGRGYRSRFVVDSARCDMDGDYHRAVMLALVVPSSSDMPHLPELRRGWNSPSEFMGLVLLMGVSMYVEAEAVVSSVFSKWSLLISIVIARHNATKGVRESLVATTHGHVVRSLFSVEAAPAAASTKHSFHPAVHRVFVRGFTHYSPLQGRSFVRCSAFVTRALQMIRRILELLLQLHATERGFECCRSVRPNGVHFRWLAEAMSGGTYMAILAYDVRSPYALPFLRLRRPGRRGLVSDSMQSQQHRCSLQIVVYSFYTNWTGGILCVSHEFDVGFGGKSRKYIAQIVRTALESTTMELATLMMTRLNNALPGRHPQTEESICVGSLTFSAPMFPSRTQPRGGLNGAYRLAIIPPIRVCVRVVGLVGRSFLLTSAYMCAVTYRLFHVAHQYTKREVAMPHRITRCTRSTALSTTSYATQRRCSVESTDRTPCSLSTPSRPFVHSSCRLRKIQIRTMEVCDSRHWLSGVSSLCRRSRTAICTGCYALRNLMRGPSTEDFNLARRKVNNGLCWCRRSISTRSWCWKTSGLNLAHPAAKLYARDTNHLYLVSGDVLLLLSDLVLFPSLLKSITVDGPLYTLGLVSGGNKTKSDNNIARRITKVSTRKIRFSQNATELVYQQPLRYASICIKILGVRTKTQRSLRPVCSRQQGSFMSKRGKFAFTKWPYWSTQTKAAQAGVGDITGSLSSLQKGSALRRKILWVTCGVGMMSPGKLQSNPPCDSTVPSTRVRERSPEILRELQFATANHNGGEVTAASLMNTTQYRGVPASRKPYRPQRIRTSAGPLGFCSVHSMVLNVIQSLIFKPSRLDGRRILRRQYVLSVWISRNSLRTKRIDEVWYTFTTKGNCFGAGALEKPSTHFLPPDPRYSGCERSSCHRRIFDPYNSCLRGLESSRNYLNHVSAESSEQIFPYYSAGPPLAKEDSRIVRFSYVLRVPAHHFRTQCGAQTSASPYRLAPHPKVQLMLVSRSYLHMSPLGGLRDPGYYHFQSTQVVSERTAATRNSICRIQKASVSATTLAPVPVKLTRKICTRNSALIQKLGSHGALSGPRPNAPIDLTTRGCQSDGPCVCAVYGSHDGRGCGRIPTSSQLTSRRSPVRSKVPLAGSPTHGTNYRRGRWIEPKGSYPFRYPRVVDSKRPSIGRSGRLETSTVLAPDKCRIATGRHIEPPVRHIGGSSLREGYRRAWLLNNTCSSDSAHNNTMHLCRGGISSHNAILTRPSYLDLHVQYPIPISMLVWCAPRLFVRESIDWHKWDMTCDTVAISGRKSRLHHHQLTRRLPNTDQGGFLFYLARTVHPFSLHGSGISEPCSQARHNYQNTGASLGRQPFSSLQARHLGGTLRNITAIRPAKGILLKDIAGPICINLLAPLERVDWDTHPLHLGRALDEGLLGIKPLPGFKCSFPSLLLAGMAILQRPAIRSRCDGPIGVYCSLQCHESVVHRALFTVCQSYWLCRFLAQCVIMSICKSSSISDRRKPFNLATLYGHRKRGLPNISSPHSMLIDTYYAKSAELQELRGLMFSASWCHVLGSDAAATIKAYSQVTDRLGRNPRMSLSPELNPAARGAVEPRKPPAETGEYSYCGKRPCKSDLYGWCFCVCYTASAFQIREQIKFAAFRSRRDKESPATMGVRFHDSTYRPFCLQYRTRRKKCQSDRYKLALCGHPMSELCTRHQHGRNSRHCPIETAMHRSNAPGDTRKQESLARDSSKSERFTELNWRSCRYWLQNALIGSILGSWDAGHTRTCVEKARETTGSLPKADARLPARRAILTKHSSVGKIGTIDRTWCCPGCRAYMQLMLFLKRGKLTRGASHNPFNTSNIVASARLVMPYFIGCCDIICGRTHRNSMATHSDRRRNFSQTTARLTMCCDLYLDHAKSARLTFLVSYSRHYCIRYRTSRTVDYSSWHPGNRIPAVNMGLFRRSARKTDLDQRTCAFLLTIRRLLLVKPCRTCYTRVDTFQRLVACRFLPDRNTGVDIRDASTEGSSWKIPIKVCNAASFMSCEFCVPLRLNGAASRLEDARSKRKTTENTAEPPDYGHKIGIPTWVFCFCSYWSQRLAPIPFKYALAPNLLCSQRLRESDNKLGAIAPCQVVTTSPVVIFEAPSMGKRKREGLAHPGYRRNAGRVESVSNVGRNSESKRYSPSVCIRDLMPDSYQVLSLYTGSVRPCNRPRLTTIRIDPGLQILDDSIDISSQDRQVVDFLRLTYTGQSPAAQYASSIVSSQRSYWPCPVSDRQFKFCNGFSQSTPTAGRVSCRNLPRVDGEIANGCVAGCMRTSWSLDMATTTTVTYASHSAGLQSQVALQVMEETVIDNETGHRTRADRSLQSRGLEREACNSYTYSGSQIIPFVPLWMCSQQLEANLNRGANDLQMSTASRTSGPFRLESITRGRRYLGSRINRWGTRGYPNHHEGNRHCRVGICRTIHEEWELLCSILRWCQIRAQIMAALVVKWIIVICPIGSGVLPDIDLDSLLRKQPWQLRTDRIGEGLNSAGPVVLSNCTEPTPGPRLGVRAYRVVRAHNVWASKIVGLLAVSLSAKLGTTYWGLGAIENCVGASCPAQRETRGCIGMCRVSARYNSISPLTTSSLPPAWGLRLTSSSRYPATRTSQAPMRTRRSTASEHPWVAENDSIRSPRSSFVAKPRCELENLGVTIMSIPVVLARAGSLVRGLSIVQKTGIRVGQLPPTASINPRCGPKMDKSVELALGPFSFAVYN\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**<font color=crimson>TASK 21.3 Commit to GitHub**</font>\n"
+      ],
+      "metadata": {
+        "id": "dvtR4N7L6sZ_"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#<font color=blue>**P22.**</font> SeqIO – a function to parse( ) sequence files"
+      ],
+      "metadata": {
+        "id": "bDJqtRiX3fEG"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "####**TASK BP 22.1** Read in the practice dataset from Rosalind #9 and print the id of each sequence in the file."
+      ],
+      "metadata": {
+        "id": "VKyMhLjx7nIo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from Bio.SeqIO import parse\n",
+        "\n",
+        "for seq_record in parse(\"practice_9.txt\", \"fasta\"):\n",
+        "    print (seq_record.id)\n",
+        "    print (seq_record.seq)\n",
+        "    print (len(seq_record.seq))\n",
+        "    print (seq_record)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xUi3JEoh7yJ6",
+        "outputId": "5488e44a-9efd-42ac-aa5a-d1426a80f7a9"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Rosalind_6404\n",
+            "CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCCTCCCACTAATAATTCTGAGG\n",
+            "80\n",
+            "ID: Rosalind_6404\n",
+            "Name: Rosalind_6404\n",
+            "Description: Rosalind_6404\n",
+            "Number of features: 0\n",
+            "Seq('CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGC...AGG')\n",
+            "Rosalind_5959\n",
+            "CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGAAGGTCTATATCCATTTGTCAGCAGACACGC\n",
+            "84\n",
+            "ID: Rosalind_5959\n",
+            "Name: Rosalind_5959\n",
+            "Description: Rosalind_5959\n",
+            "Number of features: 0\n",
+            "Seq('CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGA...CGC')\n",
+            "Rosalind_0808\n",
+            "CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGACTGGGAACCTGCGGGCAGTAGGTGGAAT\n",
+            "87\n",
+            "ID: Rosalind_0808\n",
+            "Name: Rosalind_0808\n",
+            "Description: Rosalind_0808\n",
+            "Number of features: 0\n",
+            "Seq('CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGC...AAT')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#<font color=blue>**P23.**</font> SeqUtils.GC( ) – a function to compute GC content"
+      ],
+      "metadata": {
+        "id": "SAjUYBpe3pwi"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d4c0d7dd",
+        "outputId": "e088dbd3-2db0-4bc2-b4c5-71abcdeb4e9a"
+      },
+      "source": [
+        "# gc_content.py\n",
+        "def parse_fasta(path):\n",
+        "    records = {}\n",
+        "    with open(path, \"r\") as f:\n",
+        "        label = None\n",
+        "        chunks = []\n",
+        "        for line in f:\n",
+        "            line = line.strip()\n",
+        "            if not line:\n",
+        "                continue\n",
+        "            if line.startswith(\">\"):\n",
+        "                if label is not None:\n",
+        "                    records[label] = \"\".join(chunks)\n",
+        "                label = line[1:].split()[0]  # e.g., \"Rosalind_0001\"\n",
+        "                chunks = []\n",
+        "            else:\n",
+        "                chunks.append(line)\n",
+        "        if label is not None:\n",
+        "            records[label] = \"\".join(chunks)\n",
+        "    return records\n",
+        "\n",
+        "def gc_percent(seq):\n",
+        "    s = seq.upper()\n",
+        "    gc = sum(1 for b in s if b in (\"G\", \"C\"))\n",
+        "    return (gc / len(s)) * 100.0 if s else 0.0\n",
+        "\n",
+        "def main():\n",
+        "    fasta = parse_fasta(\"rosalind_gc.txt\")\n",
+        "    best_id, best_gc = max(((k, gc_percent(v)) for k, v in fasta.items()),\n",
+        "                           key=lambda x: x[1])\n",
+        "    print(best_id)\n",
+        "    print(f\"{best_gc:.6f}\")  # six decimals works well for Rosalind\n",
+        "\n",
+        "if __name__ == \"__main__\":\n",
+        "    main()"
+      ],
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Rosalind_1712\n",
+            "51.338200\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 159
+        },
+        "id": "d78f5ade",
+        "outputId": "d85745ae-be9b-4829-d200-c111ce65c2b5"
+      },
+      "source": [
+        "my_list.remove(\"Dave\")\n",
+        "print(my_list)"
+      ],
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'my_list' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-618862747.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mmy_list\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mremove\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Dave\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmy_list\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'my_list' is not defined"
+          ]
+        }
+      ]
+    }
+  ]
+}
